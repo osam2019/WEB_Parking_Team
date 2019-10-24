@@ -1,0 +1,251 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  text-align: center;
+}
+.square {
+  text-align: center;
+  display: inline-block;
+  width: 3%;
+  height: 25px;
+  padding: 2px;
+  margin-right: -1px;
+  margin-bottom: -1px;
+  border: 1px solid black;
+  font-size: 0.7rem;
+}
+.square:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.empty {
+  color: black;
+}
+.full {
+  /* background-color: #3c69e9; */
+  color: white;
+  background:linear-gradient( 135deg, blue, skyblue );
+}
+.rotation-45 {
+  transform: rotate(-45deg);
+  width: 2.5%;
+  margin: 0px 0px 1px 5px;
+}
+.rotation45 {
+  transform: rotate(45deg);
+  width: 2.5%;
+  margin: 0px 0px 0px 5px;
+}
+.rotation90 {
+  width: 7%;
+  height: 7px;
+  padding: 0px 2px 8px;
+}
+.margin-right10 {
+  margin-right: 10px;
+}
+h1 {
+  text-align: center;
+  margin: 5px;
+}
+h3 {
+  margin: 0px;
+}
+.buttons {
+  display: inline-block;
+  width: 80px;
+  padding: 20px 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px 1px grey;
+  background-color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 15px;
+}
+.buttons:hover {
+  opacity: 0.7;
+}
+.hide {
+  display: none;
+}
+.visible {
+  display: block;
+}
+.title {
+  width: 70%;
+  margin-bottom: 20px;
+}
+.backBlue {
+  background-image: url('./images/backBlue.png');
+  width: 100%;
+  max-width: 450px;
+  padding: 350px 0px 20px;
+  position: absolute;
+  top: -80px;
+  padding-bottom: -510px;
+  z-index: -10;
+  color: white;
+}
+.tooltip {
+  display: none;
+  padding: 5px;
+  border: 1px solid black;
+  position: absolute;
+  z-index: 100;
+  background-color: lightyellow;
+  font-size: 0.8rem;
+}
+.CCTV {
+  margin: 30px 0px 10px;
+  display: inline-block;
+  width: 50px;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 20px;
+  background: linear-gradient( 135deg, green, green, white );
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 1px grey;
+}
+.CCTV:hover {
+  opacity: 0.7;
+}
+.illegal{
+  margin: 30px 0px 10px;
+  display: inline-block;
+  width: 60px;
+  padding: 14px 15px 12px;
+  font-size:0.8rem;
+  color: white;
+  border-radius: 20px;
+  background: linear-gradient( 135deg, red, red, white );
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 1px grey;
+}
+.illegal:hover{
+  opacity:0.5;
+}
+.player {
+  display: none;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background-color: rgba(128, 128, 128, 0.9);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 100px 0px;
+  z-index: 1000;
+}
+.iframe {
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: 50%;
+}
+.close {
+  display: inline-block;
+  padding: 10px 20px;
+  width: 50px;
+  background: linear-gradient( 135deg, red, red, white );
+  color: white;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+.close:hover{
+  opacity:0.7;
+}
+.active{
+  margin: 20px 0px 10px;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 20px;
+  /* background: linear-gradient( 135deg, #3c69e9, #3c69e9, white ); */
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 1px grey;
+}
+.active:hover{
+  opacity: 0.7;
+}
+.bad{
+  width:15px;
+  padding:5px;
+  background:red;
+  border-radius:8px;
+  display:none;
+  position:absolute;
+  cursor: pointer;
+  z-index:1;
+}
+.init{
+  margin: 20px 0px 10px;
+  display: inline-block;
+  padding: 10px;
+  color: color;
+  border-radius: 20px;
+  /* background: linear-gradient( 135deg, #ffdd00, #ffdd00, white ); */
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 1px grey;
+}
+.init:hover{
+  opacity: 0.7;
+}
+.swiper-slide{
+  background:blue;
+  padding:20px 0px;
+}
+
+
+#root, #wrapper {
+  max-width: 450px;
+  width: 100%;
+  height: 99.5%;
+  margin: auto;
+  text-align: center;
+  overflow:hidden;
+  /* border: 1px solid black; */
+}
+#header {
+  text-align: right;
+  padding: 10px 20px;
+  margin-bottom: -20px;
+}
+#header:hover {
+  opacity: 0.7;
+}
+#back{
+  width:30px;
+  float:left;
+}
+#home{
+  width:30px;
+  float:right;
+}
+#loading {
+  position: relative;
+  left: 0px;
+}
+#title {
+  padding-top: 50px;
+}
+#buttons {
+  position:absolute;
+  margin-top: 50px;
+  width:100%;
+}
+.footer {
+}
+
+/* #swiper .carousel{
+  height:10px;
+  overflow:hidden;
+} */
+#prev, #next{
+  display: inline-block;
+  color: white;
+  background: blue;
+  border:0px;
+  cursor: pointer;
+}
